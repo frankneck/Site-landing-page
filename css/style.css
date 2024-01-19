@@ -14,8 +14,8 @@ body {
 
 /* Header */
 .site-header {
-    background-color: #ffffff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding: 15px 0;
 }
 
@@ -29,6 +29,14 @@ body {
     text-decoration: none;
 }
 
+.navbar-collapse {
+    display: none;
+}
+
+.icon-of-logo {
+    margin-left: auto;
+}
+
 .navbar-right {
     list-style: none;
     display: flex;
@@ -39,6 +47,44 @@ body {
     margin: 0 15px;
 }
 
+/* Main Container */
+.main-container {
+    width: 80%;
+    margin: 20px auto;
+    height: 400px;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.main-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
 /* Footer */
 .site-footer {
     background-color: #000;
@@ -46,29 +92,17 @@ body {
     padding: 20px 0;
 }
 
-/* Main Container */
-.main-container {
-    width: 80%;
-    margin: 20px auto;
-    height: 400px; /* Adjust the height as needed */
-    background: linear-gradient(to bottom right, #4CAF50, #FF9800);
-    border-radius: 5px;
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 780px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    .navbar-right {
-        margin-top: 10px;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .main-container {
-        width: 90%;
-    }
+.footer-content a:hover {
+    text-decoration: underline;
 }
