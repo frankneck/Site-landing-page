@@ -36,15 +36,9 @@ body {
     height: 32px;
 }
 
-.container {
-    max-width: 1800px;
-    margin: 0 auto;
-}
-
 .navbar {
     background-color: #6a6767;
     display: flex;
-    align-items: center;
     height: 60px;
     align-items: center;
 }
