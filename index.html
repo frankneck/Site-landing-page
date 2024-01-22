@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battlefield Space - Advertise Your Adventure</title>
+    <link rel="icon" href="media/img/eacirc.png" type="image/x-icon">
+    <title>Battlefield Space</title>
 </head>
+
 <body>
     <header class="site-header">
-        <div class="container">
-            <div class="navbar">
-                <a class="navbar-main" href="#home">
-                    <img class="title" src="logo.png" alt="Battlefield Space">
-                </a>
-                <div class="navbar-collapse">
-                    <ul class="navbar-right">
-                        <li><a href="#information">Game Info</a></li>
-                        <li><a href="#dlc">Expansions</a></li>
-                        <li><a href="#forums">Community</a></li>
-                    </ul>
-                </div>
-                <img class="icon-of-logo" src="ea.png" alt="EA Logo">
-            </div>
+        <ul class="eapl-network-nav_menu">
+
+            <li class="eapl-network-nav_menu-item">
+                <a href="#home"><img src="/media/img/ea.png" style="width: 40px; height: 20px;"></a>
+            </li>
+
+            <li class="eapl-network-nav_menu-item">
+                <a href="#home"><img src="/media/img/question.png"></a>
+            </li>
+
+            <li class="eapl-network-nav_menu-item">
+                <a href="#home"><img src="/media/img/icon.png"></a>
+            </li>
+        </ul>
+
+        <div class="navbar">
+            <a class="game_logo" href="#home">
+                <img src="/media/img/fontbolt.png">
+            </a>
+            <ul class="navbar-right">
+                <li> <a hred="#home">ИНФОРМАЦИЯ</a></li>
+                <li> <a href="#dlc">ДОПОЛНЕНИЯ</a> </li>
+                <li> <a href="#forums">ФОРУМЫ</a> </li>
+            </ul>
+            
+            <a href="#home" class="cta-button" style="position: relative; left: 17%; margin-top: 50px; padding: 10px 15px;">Купить</a>
+
         </div>
     </header>
 
-    <div class="body-container container">
-        <div class="main-container">
+    <div class="main">
+        <div class="body-container container">
             <div class="background">
-                <h1>Welcome to the Future of Gaming</h1>
-                <p>Immerse yourself in the next-generation gaming experience with Battlefield Space. Explore futuristic battlefields, engage in intense multiplayer action, and discover the thrill of space warfare.</p>
-                <a href="#join-now" class="cta-button">Join Now</a>
+                <div class="main-container">
+                    <h1>Welcome to the Future</h1>
+                    <p>Immerse yourself in the next-generation gaming experience with Battlefield Space. Explore
+                        futuristic battlefields, engage in intense multiplayer action, and discover the thrill of space
+                        warfare.</p>
+                    <a href="#join-now" class="cta-button">Join Now</a>
+                </div>
+
+                <video class="background-video" autoplay loop muted>
+                    <source src="/media/video/bf2042-season6-homepage-hero-reveal-md.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
-    
+
+    <section id="information" class="info-section">
+        <img class="container">
+        <div class="information-content">
+            <h2>Game Information</h2>
+            <p>Battlefield Space takes the iconic franchise to new heights. Experience cutting-edge graphics, innovative
+                gameplay, and a compelling storyline that will keep you on the edge of your seat. Here's what you can
+                expect:</p>
+            <ul>
+                <li>Futuristic Space Setting</li>
+                <li>Advanced Weapons and Gadgets</li>
+                <li>Thrilling Multiplayer Battles</li>
+                <li>Immersive Single-Player Campaign</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="dlc" class="dlc-section">
+        <div class="container">
+            <div class="dlc-content">
+                <h2>Expansions</h2>
+                <div class="dlc-items">
+                    <div class="dlc-item">
+                        <img src="/media/img/com.jpg" alt="DLC 1">
+                        <h3>Final stand</h3>
+                        <p>Explore uncharted territories with new maps and challenges.</p>
+                        <p>Coming soon.</p>
+                    </div>
+                    <div class="dlc-item">
+                        <img src="/media/img/chi.jpg" alt="DLC 2">
+                        <h3>Community operations</h3>
+                        <p>Equip yourself with cutting-edge weapons to dominate the battlefield.</p>
+                        <p>Coming soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="forums" class="community-section">
+        <div class="container">
+            <div class="forums-content">
+                <h2>Join the Community</h2>
+                <p>Connect with other players, share your experiences, and stay updated on the latest news. Our forums
+                    are the perfect place to discuss strategies, report bugs, and engage in the Battlefield Space
+                    community.</p>
+                <a href="#join-forums" class="cta-button">Join Forums</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
@@ -45,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>
