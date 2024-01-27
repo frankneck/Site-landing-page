@@ -222,41 +222,51 @@ body {
     transform: scale(1.1);
 }
 
-
-.forums-content {
+.community-section {
+    display: flex;
+    padding: 2vh 10vh;
     background-color: #ffffff;
-    padding: 40px 40px;
-    padding-bottom: 120px;
     color: #000000;
 }
 
 .community-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 3vh;
 }
 
 .community-section p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.5vh;
+}
+
+.community-section a {
+    font-size: 1.5vh;
+    margin-bottom: 8vh;
 }
 
 .site-footer {
     background-color: #000;
     color: #fff;
-    padding: 80px 0;
+    padding: 2vh 0;
     padding-bottom: 122px;
 }
 
 .media-footer {
     display: flex;
-    flex-direction: row-reverse;
-    padding: 60px 20vw;
+    justify-content:flex-end;
+    flex-direction: row;
+    align-items: center;
 }
 
 .media-item {
     filter: invert(1);
-    padding: 0px 10px;
+    padding: 2vh 1vh;
     list-style: none;
+
+}
+
+.media-item a {
+    text-decoration: none;
+    font-size: 2vh;
+    color: #000000;
 }
 
 .media-item img {
@@ -264,17 +274,9 @@ body {
     height: auto;
 }
 
-.battlefield a {
-    padding: 0px 20vw;
-    font-size: 30px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .copyright-footer {
     background-color: #222222;
-    width: 100%;
-    padding: 50px 50px;
+    padding: 2vh 10vh;
 }
 
 .copyright-footer p{
