@@ -148,13 +148,15 @@ body {
 }
 
 .info-section {
+    display: flex;
+    margin: 0vh 3vw;
     background-color: #222222;
     color: #ffffff;
-    padding: 0px 0px;
+    padding: 0vh 0vw;
 }
 
 .info-section h2 {
-    font-size: 2.5em;
+    font-size: 5vh;
     margin-bottom: 20px;
 }
 
@@ -252,6 +254,7 @@ body {
 .media-footer {
     display: flex;
     justify-content:flex-end;
+    margin: 0vh 10vh;
     flex-direction: row;
     align-items: center;
 }
