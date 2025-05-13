@@ -26,11 +26,11 @@ body {
 
 .eapl-network-nav_menu-item a img {
     width: 30px;
-    height: 30px;
+    height: 30px;   
 }
 
 .eapl-network-nav_menu-item a:hover img {
-    filter: invert(1);
+    filter: invert(0.5);
     transition: transform 0.3s ease;
 }
 
@@ -112,6 +112,8 @@ body {
     position: relative;
     z-index: 1;
     height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
 .background-video {
@@ -172,8 +174,33 @@ body {
 
 .information-content {
     background-color: #ffffff;
-    padding: 20px 40px;
+    padding: 40px 40px;
     color: #000000;
+}
+
+.info-list {
+    list-style: none; /* отключаем стандартные маркеры */
+    padding-left: 0;  /* убираем отступ, если нужно */
+}
+
+.info-list li {
+    position: relative;
+    padding-left: 30px; /* место для иконки слева */
+}
+
+.info-list li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(/media/img/invader.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.info-list li::marker {
+    width: 10px;
 }
 
 .dlc-content {
@@ -236,11 +263,15 @@ body {
 }
 
 .community-section p {
-    font-size: 1.5vh;
+    font-size: 16px;
+}
+
+#cta-button-special {
+    margin: 20px 0px;
 }
 
 .community-section a {
-    font-size: 1.5vh;
+    font-size: 1.2em;
     margin-bottom: 8vh;
 }
 
