@@ -12,35 +12,40 @@
 <body>
     <header class="site-header">
         <ul class="eapl-network-nav_menu">
-
             <li class="eapl-network-nav_menu-item">
                 <a href="#home"><img src="/media/img/ea.png" style="width: 40px; height: 20px;"></a>
             </li>
-
             <li class="eapl-network-nav_menu-item">
                 <a href="#home"><img src="/media/img/question.png"></a>
             </li>
-
             <li class="eapl-network-nav_menu-item">
                 <a href="#home"><img src="/media/img/icon.png"></a>
             </li>
         </ul>
 
         <div class="navbar">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            
+            <ul class="menu-list">
+                <li><a href="#home" class="menu-item">ИНФОРМАЦИЯ</a></li>
+                <li><a href="#dlc" class="menu-item">ДОПОЛНЕНИЯ</a></li>
+                <li><a href="#forums" class="menu-item">ФОРУМЫ</a></li>
+            </ul>
             <a class="game_logo" href="#home">
                 <img src="/media/img/fontbolt.png">
             </a>
+
+            <!-- Показывать navbar-right только на десктопе -->
             <ul class="navbar-right">
-                <li> <a href="#home">ИНФОРМАЦИЯ</a></li>
-                <li> <a href="#dlc">ДОПОЛНЕНИЯ</a> </li>
-                <li> <a href="#forums">ФОРУМЫ</a> </li>
+                <li><a href="#home">ИНФОРМАЦИЯ</a></li>
+                <li><a href="#dlc">ДОПОЛНЕНИЯ</a></li>
+                <li><a href="#forums">ФОРУМЫ</a></li>
             </ul>
 
             <div class="buy-button">
                 <a href="#home" class="cta-button" style="left: 0%; margin-top: 0px; padding: 8px 22px;">Купить</a>
             </div>
-
-
         </div>
     </header>
 
@@ -50,10 +55,12 @@
                 <h1>Война еще никогда не была такой масштабной</h1>
                 <p>Исследуйте футуристические боевые поля, участвуйте в многопользовательских битвах и ощутите азарт
                     космической войны в Battlefield Space.</p>
-                <a href="#join-now" class="cta-button">Купить</a>
-                <a href="#join-now" class="cta-button"
-                    style="background-color: transparent;  border: 0.5px solid #ffffff; color: #ffffff;">Смотреть
-                    трейлер</a>
+                <div>
+                    <a href="#join-now" class="cta-button">Купить</a>
+                    <a href="#join-now" class="cta-button" style="background-color: transparent;  border: 0.5px solid #ffffff; color: #ffffff;">
+                        Смотреть трейлер
+                    </a>
+                </div>
             </div>
 
             <video class="background-video" autoplay loop muted>
@@ -163,6 +170,26 @@
         </div>
     </footer>
 
-</body>
+    <script>
+        // Автоматически закрывать бургер-меню при клике на пункт меню
+        document.querySelectorAll('.menu-item').forEach(function(item) {
+            item.addEventListener('click', function() {
+                var burgerCheckbox = document.getElementById('burger-checkbox');
+                if (burgerCheckbox) burgerCheckbox.checked = false;
+            });
+        });
 
+        // Блокировка скролла при открытом бургер-меню
+        const burgerCheckbox = document.getElementById('burger-checkbox');
+        if (burgerCheckbox) {
+            burgerCheckbox.addEventListener('change', function() {
+                if (burgerCheckbox.checked) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+    </script>
+</body>
 </html>
